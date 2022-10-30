@@ -175,6 +175,6 @@ def one_hot_encoding12(T):
 
 #let's try!
 
-print(one_hot_encoding(categories).astype(int))
+print(one_hot_encoding(a).astype(int))
 
 
