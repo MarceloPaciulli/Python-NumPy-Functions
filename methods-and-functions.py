@@ -171,7 +171,17 @@ def one_hot_encoding12(T):
         init+=freq
     return targets
 
-
+'''
+# another variant
+def one_hot_encoding(T):
+    types = np.unique(T) 
+    targets = np.eye(len(types))
+    encoded_targets = np.zeros((len(T), len(types)))
+    for i, item in enumerate(T):
+        index = np.where(types == item)[0][0]
+        encoded_targets[i] = targets[index]
+    return encoded_targets
+'''
 
 #let's try!
 
